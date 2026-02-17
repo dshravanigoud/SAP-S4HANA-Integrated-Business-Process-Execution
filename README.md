@@ -69,11 +69,6 @@ This project demonstrated:
 	•	Cross-plant supply chain coordination
 
 
-That alone makes your repo 10x stronger.
-
-
-🔥 Even Stronger Version (Add This Section)
-
 Business Concepts Applied
 	•	Make-to-Order strategy
 	•	Procure-to-Order execution
