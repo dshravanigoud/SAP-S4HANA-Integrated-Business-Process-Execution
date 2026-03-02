@@ -1,78 +1,53 @@
-# SAP-S4HANA-Integrated-Business-Process-Execution
-End-to-end SAP S/4HANA 1709 execution covering Order-to-Cash, Procure-to-Pay, Production Planning, MRP, Warehouse Management, and FI integration. Includes real system document flow (SO → PR → PO → Production → STO → Delivery → Billing → Accounting) demonstrating full supply chain integration.
+Let me read through these files to understand what the SAP work actually covers.Now I have a clear picture. Here's the README:
 
-What I Executed in the System
+---
 
-I executed a full end-to-end integrated business process in SAP S/4HANA 1709 covering:
-	•	Sales & Distribution (SD)
-	•	Materials Management (MM)
-	•	Production Planning (PP)
-	•	Material Requirements Planning (MRP)
-	•	Warehouse Management (WM)
-	•	Financial Accounting (FI)
+# SAP S/4HANA — Integrated Business Process Simulation
 
+Hands-on SAP S/4HANA simulation of end-to-end integrated business processes completed as part of coursework at the University of Tampa, using the Global Bike Inc. (GBI) training environment.
 
-Scenario Executed
+> **Disclosure:** Exercises and process frameworks developed by Simha R. Magal and Jeff Word (*Integrated Business Processes with ERP Systems*, Epistemy Press). Transactions executed independently in a live SAP S/4HANA 1709 system.
 
-A customer placed an order for:
-	•	5 Deluxe Touring Bikes (Finished Goods)
-	•	50 Off-Road Helmets (Trading Goods)
+---
 
-There was insufficient inventory available.
+## What Was Covered
 
-This triggered an integrated procure-to-produce-to-deliver workflow.
+### Chapter 09-01 — Integrated Process Execution
+Executed a full make-to-order and procure-to-order cycle for Rocky Mountain Bikes ordering 40 Red Deluxe Touring Bikes ($2,800/unit) from GBI:
 
+| Step | SAP Process |
+|---|---|
+| Master Data Setup | Vendor, customer, material, and pricing conditions |
+| Fulfillment — Start | Sales quotation → Sales order with availability check |
+| Procurement | Purchase order creation and execution |
+| Production | MRP run → Production order → Goods issue |
+| Inventory Management | Stock Transport Order (STO) Dallas → San Diego |
+| Fulfillment — End | Outbound delivery → Billing → Account settlement |
 
-Step-by-Step System Execution
+### Chapter 09-02 — Integrated Warehouse Management Process
+Extended the integrated cycle with Warehouse Management (WM) steps including inbound and outbound WM processing within the fulfillment and procurement flows.
 
-1. Sales & Order-to-Cash (SD)
-	•	Created Sales Quotation
-	•	Converted to Sales Order
-	•	Executed ATP availability check
-	•	Triggered procurement & production due to stock shortage
+---
 
-2. Procurement (MM)
-	•	Created Purchase Requisitions
-	•	Converted to Purchase Orders
-	•	Posted Goods Receipts
-	•	Posted Vendor Invoices
-	•	Reviewed automatic FI postings
+## Key Concepts Demonstrated
 
-3. MRP & Production (PP)
-	•	Ran MRP (single-level and multi-level)
-	•	Converted planned orders to production orders
-	•	Issued raw materials
-	•	Received semi-finished and finished goods
+- Make-to-order and procure-to-order production/procurement strategies
+- How financial account balances update at each step of the process cycle
+- Stock valuation changes after external procurement and production completion
+- Integration between SD, MM, PP, FI, and WM modules in a single transaction cycle
 
-4. Inter-Plant Logistics
-	•	Created Stock Transport Order (Dallas → Distribution plant)
-	•	Posted Goods Issue at production plant
-	•	Posted Goods Receipt at distribution plant
+---
 
-5. Warehouse Execution (WM)
-	•	Executed transfer orders for put-away
-	•	Performed picking during outbound delivery
+## Files
 
-6. Fulfillment & Financial Close
-	•	Created outbound delivery
-	•	Generated billing document
-	•	Validated revenue, COGS, inventory, and AP/AR postings
+| File | Description |
+|---|---|
+| `_.pptx` | Process flow lecture slides covering the full integrated cycle |
+| `Ch_09-01_Integrated_Process.docx` | Step-by-step exercise guide for integrated procurement, production, and fulfillment |
+| `Ch_09-02_Integrated_WM_Process.docx` | Extended exercise guide including warehouse management steps |
 
+---
 
-Integration Validated
+## Skills Demonstrated
 
-This project demonstrated:
-	•	End-to-end ERP process integration
-	•	Automatic FI postings from logistics transactions
-	•	MRP-driven procurement
-	•	Make-to-order execution
-	•	Cross-plant supply chain coordination
-
-
-Business Concepts Applied
-	•	Make-to-Order strategy
-	•	Procure-to-Order execution
-	•	MRP-driven planning
-	•	GR/IR clearing process
-	•	Inventory valuation (MAP)
-	•	Cost flow from raw material → finished goods → COGS
+`SAP S/4HANA` `ERP` `Procure-to-Pay` `Order-to-Cash` `Production Planning` `Inventory Management` `Warehouse Management` `Financial Accounting` `Integrated Business Processes`
