@@ -1,6 +1,3 @@
-Let me read through these files to understand what the SAP work actually covers.Now I have a clear picture. Here's the README:
-
----
 
 # SAP S/4HANA — Integrated Business Process Simulation
 
